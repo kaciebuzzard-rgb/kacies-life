@@ -3,102 +3,23 @@ layout: default
 title: Home
 ---
 
-/* =========================
-   HERO (MATCHES YOUR HTML)
-========================= */
-.hero{
-  position:relative;
-  padding:112px 0 72px;
-  min-height:78vh;
-  display:flex;
-  align-items:center;
+<section class="hero" id="top">
+  <div class="hero-overlay" aria-hidden="true"></div>
 
-  /* CHANGE THIS FILE NAME to match your real hero image */
-  background:
-    url('/assets/img/hero.jpg') center/cover no-repeat;
-}
+  <div class="wrap hero-inner">
+    <h1>Where Lived Experience Drives Systems Change</h1>
 
-/* Your markup includes a real overlay div */
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  /* dark overlay for readability */
-  background:rgba(25,20,18,.45);
-  pointer-events:none;
-}
+    <p class="hero-sub">
+      I speak, write, and build strategies that turn caregiving,
+      disability, and lived experience into real systems change.
+    </p>
 
-/* Ensure hero content sits above overlay */
-.hero-inner{
-  position:relative;
-  z-index:1;
-  max-width:760px;
-}
-
-.hero h1{
-  color:#fff;
-  font-size:clamp(34px, 5vw, 56px);
-  letter-spacing:-.6px;
-  margin:0 0 14px;
-}
-
-.hero-sub{
-  color:rgba(255,255,255,.92);
-  font-size:clamp(16px, 2vw, 20px);
-  margin:0 0 22px;
-  opacity:1;
-}
-
-/* Buttons row */
-.hero-buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:10px;
-}
-
-/* Make ghost readable on dark hero */
-.btn-ghost{
-  background:rgba(255,255,255,.14);
-  color:#fff;
-  border:1px solid rgba(255,255,255,.22);
-  box-shadow:none;
-}
-.btn-ghost:hover{
-  background:rgba(255,255,255,.20);
-}
-.hero{
-position:relative;
-padding:140px 0;
-background-image:url('/assets/img/kacie-speaking.jpg');
-background-size:cover;
-background-position:center;
-color:white;
-}
-
-.hero-overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.45);
-}
-
-.hero-inner{
-position:relative;
-z-index:2;
-max-width:680px;
-}
-/* =========================
-   OUTLINE BUTTON (you used .btn-outline)
-========================= */
-.btn-outline{
-  background:transparent;
-  color:#1e1b18;
-  border:1px solid rgba(30,27,24,.22);
-  box-shadow:none;
-}
-.btn-outline:hover{
-  background:rgba(197,90,58,.10);
-  border-color:rgba(197,90,58,.35);
-}
+    <div class="hero-buttons">
+      <a class="btn" href="mailto:kacie.buzzard@gmail.com">Book a Keynote</a>
+      <a class="btn btn-ghost" href="#about">Learn More</a>
+    </div>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap about-grid">
@@ -121,7 +42,7 @@ max-width:680px;
         shape the lives of disabled people and their families.
       </p>
 
-      <a class="btn btn-outline" href="/about">Read Full Bio</a>
+      <a class="btn btn-outline" href="{{ '/about' | relative_url }}">Read Full Bio</a>
     </div>
 
     <div class="about-image">
