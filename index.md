@@ -66,7 +66,26 @@ title: Home
 .btn-ghost:hover{
   background:rgba(255,255,255,.20);
 }
+.hero{
+position:relative;
+padding:140px 0;
+background-image:url('/assets/img/kacie-speaking.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+}
 
+.hero-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+
+.hero-inner{
+position:relative;
+z-index:2;
+max-width:680px;
+}
 /* =========================
    OUTLINE BUTTON (you used .btn-outline)
 ========================= */
