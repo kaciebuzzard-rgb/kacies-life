@@ -29,7 +29,6 @@
 
   /* Hero controls */
   --hero-min:78vh;
-  --hero-overlay:rgba(25,20,18,.45);
 }
 
 /* =========================
@@ -70,9 +69,7 @@ h3{
 .muted{ color:var(--muted); }
 .center{ text-align:center; }
 
-.section-header{
-  margin-bottom:26px;
-}
+.section-header{ margin-bottom:26px; }
 .section-intro{
   max-width:70ch;
   color:var(--muted);
@@ -113,6 +110,18 @@ h3{
   background:rgba(30,27,24,.05);
 }
 
+/* Mobile nav wrap */
+@media (max-width: 760px){
+  .site-nav{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .nav-links{
+    width:100%;
+    gap:8px;
+  }
+}
+
 /* =========================
    BUTTONS
 ========================= */
@@ -130,6 +139,8 @@ h3{
   box-shadow:var(--shadow-soft);
 }
 .btn:hover{ background:var(--primary-2); }
+.btn:active{ transform:translateY(1px); }
+
 .btn-ghost{
   background:transparent;
   border:1px solid rgba(255,255,255,.55);
@@ -139,6 +150,7 @@ h3{
 .btn-ghost:hover{
   background:rgba(255,255,255,.10);
 }
+
 .btn-dark{
   background:var(--text);
   color:#fff;
@@ -154,7 +166,7 @@ h3{
 
 /* =========================
    HERO
-   IMPORTANT: uses /assets/img/6a.jpg
+   Uses /6a.jpg (repo root)
 ========================= */
 .hero{
   position:relative;
@@ -162,14 +174,12 @@ h3{
   min-height:var(--hero-min);
   display:flex;
   align-items:center;
-
-  background:
-    url('/assets/img/6a.jpg') center/cover no-repeat;
+  background: url('/6a.jpg') center/cover no-repeat;
 }
 .hero-overlay{
   position:absolute;
   inset:0;
-  background:var(--hero-overlay);
+  background:linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.34));
   pointer-events:none;
 }
 .hero-inner{
@@ -192,10 +202,8 @@ h3{
 /* =========================
    CARDS + GRID
 ========================= */
-.grid{
-  display:grid;
-  gap:22px;
-}
+.grid{ display:grid; gap:22px; }
+
 .card{
   background:var(--surface);
   border:1px solid var(--line);
@@ -216,7 +224,7 @@ h3{
 }
 
 /* =========================
-   SERVICES / SPEAKING BLOCKS
+   FEATURES / SERVICES
 ========================= */
 .features{
   display:grid;
@@ -281,6 +289,7 @@ h3{
 .writing-content h3{
   margin:0 0 8px;
   font-size:18px;
+  line-height:1.25;
 }
 .writing-content p{
   margin:0 0 14px;
@@ -293,7 +302,7 @@ h3{
 }
 
 /* =========================
-   BLOG LIST / POSTS
+   BLOG / POST
 ========================= */
 .post{
   max-width:78ch;
@@ -309,9 +318,7 @@ h3{
   letter-spacing:-.6px;
   margin-bottom:10px;
 }
-.post h2{
-  margin-top:26px;
-}
+.post h2{ margin-top:26px; }
 .post p{
   font-size:18px;
   line-height:1.8;
@@ -347,4 +354,17 @@ h3{
   justify-content:space-between;
   gap:16px;
   flex-wrap:wrap;
+}
+
+/* =========================
+   SMALL POLISH
+========================= */
+hr{
+  border:none;
+  border-top:1px solid var(--line);
+  margin:28px 0;
+}
+
+::selection{
+  background:rgba(197,90,58,.22);
 }
