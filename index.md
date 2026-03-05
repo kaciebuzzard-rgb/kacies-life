@@ -47,7 +47,7 @@ title: Home
 
     <div class="about-image">
       <img
-        src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
+        src="{{ '/assets/kacie-speaking.png' | relative_url }}"
         alt="Kacie Buzzard speaking about disability advocacy and caregiving systems">
     </div>
   </div>
