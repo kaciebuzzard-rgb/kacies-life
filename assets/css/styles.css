@@ -1,1 +1,50 @@
+body{
+font-family:Montserrat, sans-serif;
+margin:0;
+color:#1e1b18;
+line-height:1.6;
+}
 
+.wrap{
+width:1100px;
+max-width:92%;
+margin:auto;
+}
+
+.site-header{
+border-bottom:1px solid #eee;
+padding:20px 0;
+}
+
+.site-nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.nav-links a{
+margin-left:18px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero{
+padding:120px 0;
+background:#f7f1e8;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#c55a3a;
+color:white;
+padding:12px 22px;
+border-radius:6px;
+margin-top:20px;
+text-decoration:none;
+font-weight:600;
+}
