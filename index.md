@@ -4,69 +4,51 @@ title: Home
 ---
 
 <section class="hero" id="top">
+  <div class="hero-overlay" aria-hidden="true"></div>
 
-<div class="hero-overlay"></div>
+  <div class="wrap hero-inner">
+    <h1>Where Lived Experience Drives Systems Change</h1>
 
-<div class="wrap hero-inner">
+    <p class="hero-sub">
+      I speak, write, and build strategies that turn caregiving,
+      disability, and lived experience into real systems change.
+    </p>
 
-<h1>Where Lived Experience Drives Systems Change</h1>
-
-<p class="hero-sub">
-I speak, write, and build strategies that turn caregiving,
-disability, and lived experience into real systems change.
-</p>
-
-<div class="hero-buttons">
-
-<a class="btn" href="mailto:kacie.buzzard@gmail.com">
-Book a Keynote
-</a>
-
-<a class="btn btn-ghost" href="#about">
-Learn More
-</a>
-
-</div>
-
-</div>
+    <div class="hero-buttons">
+      <a class="btn" href="mailto:kacie.buzzard@gmail.com">Book a Keynote</a>
+      <a class="btn btn-ghost" href="#about">Learn More</a>
+    </div>
+  </div>
 </section>
 
-
-
 <section id="about">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <h2>About Kacie</h2>
 
-<div class="wrap about-grid">
+      <p>
+        Kacie Wielgus (Buzzard) is a speaker, writer, and strategist working at the intersection of
+        disability advocacy, caregiving systems, and inclusive communications.
+      </p>
 
-<div class="about-text">
+      <p>
+        Drawing on lived experience as a parent navigating complex medical and disability systems,
+        her work helps organizations move beyond awareness toward structural change.
+      </p>
 
-<h2>About Kacie</h2>
+      <p>
+        Her writing explores caregiving, invisible labor, disability identity, and the systems families
+        must navigate. Her keynotes challenge audiences to rethink how policy, communication, and leadership
+        shape the lives of disabled people and their families.
+      </p>
 
-<p>
-Kacie Wielgus (Buzzard) is a speaker, writer, and strategist working at the intersection of disability advocacy, caregiving systems, and inclusive communications.
-</p>
+      <a class="btn btn-outline" href="/about">Read Full Bio</a>
+    </div>
 
-<p>
-Drawing on lived experience as a parent navigating complex medical and disability systems, her work helps organizations move beyond awareness toward structural change.
-</p>
-
-<p>
-Her writing explores caregiving, invisible labor, disability identity, and the systems families must navigate. Her keynotes challenge audiences to rethink how policy, communication, and leadership shape the lives of disabled people and their families.
-</p>
-
-<a class="btn btn-outline" href="/about">
-Read Full Bio
-</a>
-
-</div>
-
-<div class="about-image">
-
-<img 
-src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}" 
-alt="Kacie Buzzard speaking about disability advocacy and caregiving systems">
-
-</div>
-
-</div>
-
+    <div class="about-image">
+      <img
+        src="{{ '/assets/img/kacie-speaking.jpg' | relative_url }}"
+        alt="Kacie Buzzard speaking about disability advocacy and caregiving systems">
+    </div>
+  </div>
 </section>
