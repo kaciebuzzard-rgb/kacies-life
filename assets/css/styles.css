@@ -1,29 +1,25 @@
 /* =========================
-   HERO (with image + overlay)
+   HERO (MATCHES YOUR HTML)
 ========================= */
 .hero{
   position:relative;
-  padding:112px 0 72px;
   min-height:78vh;
   display:flex;
   align-items:center;
+  padding:112px 0 72px;
 
-  /* 👇 Put your real hero image path here */
-  background:
-    linear-gradient(180deg, rgba(247,241,232,.92), rgba(255,255,255,.96)),
-    url('/assets/img/hero.jpg') center/cover no-repeat;
+  /* Use your existing image */
+  background:url('/assets/img/kacie-speaking.jpg') center/cover no-repeat;
 }
 
-/* Soft dark overlay to keep text readable on bright photos */
-.hero::before{
-  content:"";
+/* Real overlay div from your HTML */
+.hero-overlay{
   position:absolute;
   inset:0;
-  background:rgba(25,20,18,.35);
+  background:rgba(0,0,0,.45);
   pointer-events:none;
 }
 
-/* Keep content above overlay */
 .hero-inner{
   position:relative;
   z-index:1;
@@ -31,20 +27,19 @@
 }
 
 .hero h1{
+  color:#fff;
   font-size:clamp(34px, 5vw, 56px);
   letter-spacing:-.6px;
   margin:0 0 14px;
-  color:#ffffff;
 }
 
-.hero p{
+.hero-sub{
+  color:rgba(255,255,255,.92);
   font-size:clamp(16px, 2vw, 20px);
   margin:0 0 22px;
-  opacity:.95;
-  color:rgba(255,255,255,.92);
 }
 
-/* Button row */
+/* Buttons row */
 .hero-buttons{
   display:flex;
   gap:12px;
@@ -52,13 +47,44 @@
   margin-top:10px;
 }
 
-/* Make ghost button readable on photo */
+/* Ghost button readable on hero */
 .btn-ghost{
-  background:rgba(255,255,255,.16);
-  color:#ffffff;
+  background:rgba(255,255,255,.14);
+  color:#fff;
   border:1px solid rgba(255,255,255,.22);
   box-shadow:none;
 }
 .btn-ghost:hover{
-  background:rgba(255,255,255,.22);
+  background:rgba(255,255,255,.20);
+}
+
+/* =========================
+   OUTLINE BUTTON
+========================= */
+.btn-outline{
+  background:transparent;
+  color:#1e1b18;
+  border:1px solid rgba(30,27,24,.22);
+  box-shadow:none;
+}
+.btn-outline:hover{
+  background:rgba(197,90,58,.10);
+  border-color:rgba(197,90,58,.35);
+}
+
+/* =========================
+   ABOUT GRID
+========================= */
+.about-grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:28px;
+  align-items:center;
+}
+@media (max-width: 920px){
+  .about-grid{ grid-template-columns:1fr; }
+}
+.about-image img{
+  border-radius:18px;
+  box-shadow:0 16px 40px rgba(0,0,0,.12);
 }
