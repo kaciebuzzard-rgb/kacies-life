@@ -3,7 +3,8 @@
 <div class="wrap speaking-grid">
 
 <div class="speaking-image">
-<img src="{{ '/assets/img/kacie-speaks.png' | relative_url }}"
+<img src="{{ '/assets/kacie_speaks.png' | relative_url }}"
+alt="Kacie Wielgus speaking on stage to an audience">
 alt="Kacie Wielgus speaking on stage to an audience">
 </div>
 
